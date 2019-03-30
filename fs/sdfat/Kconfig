@@ -67,7 +67,7 @@ config SDFAT_VIRTUAL_XATTR
 
 config SDFAT_VIRTUAL_XATTR_SELINUX_LABEL
 	string "Default string for SELinux label"
-	default "u:object_r:sdcard_external:s0"
+	default "u:object_r:vfat:s0"
 	depends on SDFAT_FS && SDFAT_VIRTUAL_XATTR
 	help
 	  Set this to the default string for SELinux label.
